@@ -140,7 +140,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     /* ===================================================================
-       3. STICKY NAVBAR & MOBILE MENU TOGGLE
+       3. STICKY NAVBAR & FULL MOBILE DRAWER ENGINE
        =================================================================== */
     const navbar = document.getElementById('navbar');
     const menuToggle = document.getElementById('menuToggle');
@@ -148,14 +148,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const mobileLinks = document.querySelectorAll('.mobile-link');
     const navItems = document.querySelectorAll('.nav-item');
 
+    // Sticky shadow and active section indicator on scroll
     window.addEventListener('scroll', () => {
-        if (window.scrollY > 40) {
+        if (window.scrollY > 30) {
             navbar.classList.add('scrolled');
         } else {
             navbar.classList.remove('scrolled');
         }
 
-        // Active link highlighting on scroll
         const sections = document.querySelectorAll('section[id]');
         const scrollPosition = window.scrollY + 140;
 
@@ -171,19 +171,68 @@ document.addEventListener('DOMContentLoaded', () => {
                         item.classList.add('active');
                     }
                 });
+
+                mobileLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === `#${sectionId}`) {
+                        link.classList.add('active');
+                    }
+                });
             }
         });
     });
 
+    // Mobile Drawer Open / Close Logic
+    function toggleMobileMenu() {
+        const isOpen = mobileDrawer.classList.contains('active');
+        if (isOpen) {
+            closeMobileMenu();
+        } else {
+            openMobileMenu();
+        }
+    }
+
+    function openMobileMenu() {
+        if (!mobileDrawer || !menuToggle) return;
+        mobileDrawer.classList.add('active');
+        menuToggle.classList.add('active');
+        menuToggle.setAttribute('aria-expanded', 'true');
+        document.body.classList.add('menu-open');
+    }
+
+    function closeMobileMenu() {
+        if (!mobileDrawer || !menuToggle) return;
+        mobileDrawer.classList.remove('active');
+        menuToggle.classList.remove('active');
+        menuToggle.setAttribute('aria-expanded', 'false');
+        document.body.classList.remove('menu-open');
+    }
+
     if (menuToggle && mobileDrawer) {
-        menuToggle.addEventListener('click', () => {
-            mobileDrawer.classList.toggle('active');
+        menuToggle.addEventListener('click', (e) => {
+            e.stopPropagation();
+            toggleMobileMenu();
         });
 
+        // Close when any mobile nav link is clicked
         mobileLinks.forEach(link => {
             link.addEventListener('click', () => {
-                mobileDrawer.classList.remove('active');
+                closeMobileMenu();
             });
+        });
+
+        // Close on clicking outside the drawer
+        document.addEventListener('click', (e) => {
+            if (mobileDrawer.classList.contains('active') && !mobileDrawer.contains(e.target) && !menuToggle.contains(e.target)) {
+                closeMobileMenu();
+            }
+        });
+
+        // Close on Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && mobileDrawer.classList.contains('active')) {
+                closeMobileMenu();
+            }
         });
     }
 
@@ -195,6 +244,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const messageInput = document.getElementById('messageBody');
 
     function jumpToContactWithService(serviceValue) {
+        closeMobileMenu();
         const contactSection = document.getElementById('contact');
         if (contactSection) {
             contactSection.scrollIntoView({ behavior: 'smooth' });
@@ -251,6 +301,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (partnerCsiBtn) {
         partnerCsiBtn.addEventListener('click', (e) => {
             e.preventDefault();
+            closeMobileMenu();
             const contactSection = document.getElementById('contact');
             if (contactSection) contactSection.scrollIntoView({ behavior: 'smooth' });
             if (messageInput) setTimeout(() => messageInput.focus(), 600);
@@ -258,7 +309,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     /* ===================================================================
-       5. 3D CARD INTERACTIVE TILT EFFECT
+       5. 3D CARD INTERACTIVE TILT EFFECT (Desktop Only)
        =================================================================== */
     const emblemCard = document.getElementById('emblemCard');
     if (emblemCard && window.innerWidth > 992) {
@@ -285,8 +336,8 @@ document.addEventListener('DOMContentLoaded', () => {
        =================================================================== */
     const revealElements = document.querySelectorAll('.fade-in-up, .fade-in-scale');
     const observerOptions = {
-        threshold: 0.15,
-        rootMargin: '0px 0px -40px 0px'
+        threshold: 0.1,
+        rootMargin: '0px 0px -30px 0px'
     };
 
     const revealObserver = new IntersectionObserver((entries, observer) => {
@@ -344,7 +395,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     animateStats();
                 }
             });
-        }, { threshold: 0.3 });
+        }, { threshold: 0.2 });
         statsObserver.observe(statsSection);
     }
 
@@ -439,6 +490,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const emergencyReportForm = document.getElementById('emergencyReportForm');
 
     function openModal() {
+        closeMobileMenu();
         if (incidentModal) incidentModal.classList.add('active');
         document.body.style.overflow = 'hidden';
     }

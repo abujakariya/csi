@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cyber Surveillance Intelligence</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>Cyber Surveillance Intelligence | Observe, Protect & Stay Secure</title>
     <meta name="description" content="Cyber Surveillance Intelligence - Premier Cyber Crime Investigation, 24/7 Threat Monitoring, Digital Forensics, and Threat Analysis.">
     
     <!-- Google Fonts -->
@@ -25,7 +25,7 @@
             <div class="ticker-status">
                 <span class="live-pulse"></span>
                 <span class="status-tag">INTELLIGENCE GRID</span>
-                <span class="status-info">DEFCON LEVEL 1 — SURVEILLANCE ACTIVE</span>
+                <span class="status-info">DEFCON LEVEL 1 — ACTIVE</span>
             </div>
             <div class="ticker-metrics">
                 <span><i class="fa-solid fa-location-dot text-gold"></i> Dhanmondi, Dhaka, Bangladesh</span>
@@ -34,7 +34,7 @@
                     <i class="fa-solid fa-envelope-shield text-cyan"></i> director_adfi_csi@secretary.net
                 </a>
                 <span class="divider">|</span>
-                <a href="tel:+8801773729997" class="hotline-tag"><i class="fa-solid fa-phone-volume"></i> Direct Line: <strong>+880 1773-729997</strong></a>
+                <a href="tel:+8801773729997" class="hotline-tag"><i class="fa-solid fa-phone-volume"></i> Direct: <strong>+880 1773-729997</strong></a>
             </div>
         </div>
     </div>
@@ -54,7 +54,7 @@
                 </div>
             </a>
 
-            <!-- Desktop Nav Menu (Tight, single line fit) -->
+            <!-- Desktop Nav Menu (Single line fit) -->
             <nav class="main-nav">
                 <ul class="nav-links">
                     <li><a href="#hero" class="nav-item active">Home</a></li>
@@ -67,51 +67,73 @@
                 </ul>
             </nav>
 
-            <!-- Header Action CTA -->
+            <!-- Header Action CTA (Desktop & Mobile Optimized) -->
             <div class="nav-actions">
                 <a href="https://www.facebook.com/cybersurveillanceintelligence" target="_blank" rel="noopener noreferrer" class="nav-fb-btn" aria-label="Official Facebook Page" title="Official Facebook">
                     <i class="fa-brands fa-facebook-f"></i>
                 </a>
-                <button class="btn btn-outline btn-compact" id="emergencyReportBtn">
+                <button class="btn btn-outline btn-compact desktop-only-btn" id="emergencyReportBtn">
                     <i class="fa-solid fa-triangle-exclamation"></i>
                     <span>Report Incident</span>
                 </button>
-                <a href="#contact" class="btn btn-gold btn-compact" id="navConsultBtn">
+                <a href="#contact" class="btn btn-gold btn-compact desktop-only-btn" id="navConsultBtn">
                     <i class="fa-solid fa-shield-virus"></i>
                     <span>Consultation</span>
                 </a>
-                <!-- Mobile Hamburger Toggle -->
-                <button class="mobile-toggle" id="menuToggle" aria-label="Toggle navigation">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                <!-- Mobile Hamburger Toggle (High-visibility, Animated) -->
+                <button class="mobile-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+                    <span class="bar-top"></span>
+                    <span class="bar-mid"></span>
+                    <span class="bar-bot"></span>
                 </button>
             </div>
         </div>
 
-        <!-- Mobile Drawer -->
+        <!-- Mobile Drawer (Full app-like slide down with icons and tap targets) -->
         <div class="mobile-drawer" id="mobileDrawer">
-            <ul class="mobile-nav-links">
-                <li><a href="#hero" class="mobile-link">Home</a></li>
-                <li><a href="#about" class="mobile-link">About Us</a></li>
-                <li><a href="#director" class="mobile-link">Directorate Leadership</a></li>
-                <li><a href="#services" class="mobile-link">Core Services</a></li>
-                <li><a href="#operations" class="mobile-link">Forensic Lab</a></li>
-                <li><a href="#intelligence" class="mobile-link">Threat Intel</a></li>
-                <li><a href="#contact" class="mobile-link">Contact</a></li>
-            </ul>
-            <div class="mobile-social-bar">
-                <a href="https://www.facebook.com/cybersurveillanceintelligence" target="_blank" rel="noopener noreferrer" class="btn btn-outline w-100 mb-2">
-                    <i class="fa-brands fa-facebook-f text-gold"></i> Official Facebook Page
-                </a>
-            </div>
-            <div class="mobile-actions">
-                <button class="btn btn-outline w-100 mb-2" id="mobileEmergencyBtn">
-                    <i class="fa-solid fa-triangle-exclamation"></i> Report Incident
-                </button>
-                <a href="#contact" class="btn btn-gold w-100" id="mobileConsultBtn">
-                    <i class="fa-solid fa-shield-virus"></i> Secure Consultation
-                </a>
+            <div class="mobile-drawer-inner">
+                <div class="mobile-drawer-header">
+                    <div class="mobile-drawer-brand">
+                        <img src="assets/logo.png" alt="CSI Logo" class="mobile-drawer-logo logo-round">
+                        <div>
+                            <span class="drawer-agency-name">CYBER SURVEILLANCE INTEL</span>
+                            <span class="drawer-status-pill"><span class="dot-live"></span> 24/7 SOC Online</span>
+                        </div>
+                    </div>
+                </div>
+
+                <ul class="mobile-nav-links">
+                    <li><a href="#hero" class="mobile-link active"><i class="fa-solid fa-house"></i> <span>Home</span></a></li>
+                    <li><a href="#about" class="mobile-link"><i class="fa-solid fa-building-shield"></i> <span>About Us</span></a></li>
+                    <li><a href="#director" class="mobile-link"><i class="fa-solid fa-user-tie"></i> <span>Directorate Leadership</span></a></li>
+                    <li><a href="#services" class="mobile-link"><i class="fa-solid fa-cubes-stacked"></i> <span>Core Services</span></a></li>
+                    <li><a href="#operations" class="mobile-link"><i class="fa-solid fa-network-wired"></i> <span>Forensic Lab</span></a></li>
+                    <li><a href="#intelligence" class="mobile-link"><i class="fa-solid fa-satellite-dish"></i> <span>Threat Intel</span></a></li>
+                    <li><a href="#contact" class="mobile-link"><i class="fa-solid fa-headset"></i> <span>Contact & Dispatch</span></a></li>
+                </ul>
+
+                <div class="mobile-quick-contacts">
+                    <a href="tel:+8801773729997" class="mobile-contact-pill">
+                        <i class="fa-solid fa-phone-volume text-gold"></i>
+                        <span>+880 1773-729997</span>
+                    </a>
+                    <a href="#" class="mobile-contact-pill gmail-action-link" data-subject="Mobile Direct Inquiry">
+                        <i class="fa-solid fa-envelope text-cyan"></i>
+                        <span>Email Directorate</span>
+                    </a>
+                </div>
+
+                <div class="mobile-drawer-actions">
+                    <button type="button" class="btn btn-alert w-100" id="mobileEmergencyBtn">
+                        <i class="fa-solid fa-triangle-exclamation"></i> Report Emergency Incident
+                    </button>
+                    <a href="#contact" class="btn btn-gold w-100" id="mobileConsultBtn">
+                        <i class="fa-solid fa-shield-virus"></i> Secure Consultation Form
+                    </a>
+                    <a href="https://www.facebook.com/cybersurveillanceintelligence" target="_blank" rel="noopener noreferrer" class="btn btn-outline w-100">
+                        <i class="fa-brands fa-facebook-f text-gold"></i> Official Facebook Page
+                    </a>
+                </div>
             </div>
         </div>
     </header>
@@ -154,7 +176,7 @@
                     </a>
                     <a href="https://www.facebook.com/cybersurveillanceintelligence" target="_blank" rel="noopener noreferrer" class="btn btn-glass-large">
                         <i class="fa-brands fa-facebook-f text-gold"></i>
-                        <span>Official Channel</span>
+                        <span>Official Facebook Page</span>
                     </a>
                 </div>
 
@@ -162,7 +184,7 @@
                 <div class="hero-stats-grid fade-in-up delay-5">
                     <div class="stat-card">
                         <div class="stat-number" data-target="99.98">0%</div>
-                        <div class="stat-label">Threat Interception Rate</div>
+                        <div class="stat-label">Interception Rate</div>
                     </div>
                     <div class="stat-card">
                         <div class="stat-number" data-target="15000">0+</div>
@@ -170,11 +192,11 @@
                     </div>
                     <div class="stat-card">
                         <div class="stat-number" data-target="24">0/7</div>
-                        <div class="stat-label">Autonomous Surveillance</div>
+                        <div class="stat-label">24/7 Surveillance</div>
                     </div>
                     <div class="stat-card">
                         <div class="stat-number" data-target="100">0%</div>
-                        <div class="stat-label">Court-Admissible Evidence</div>
+                        <div class="stat-label">Court Evidence</div>
                     </div>
                 </div>
             </div>
@@ -217,13 +239,13 @@
         <!-- Banner Bottom Stream Strip -->
         <div class="hero-stream-strip">
             <div class="container stream-container">
-                <span class="stream-label"><i class="fa-solid fa-circle-nodes"></i> ACTIVE INTEL FEEDS:</span>
+                <span class="stream-label"><i class="fa-solid fa-circle-nodes"></i> ACTIVE FEEDS:</span>
                 <div class="stream-items">
                     <span class="stream-item"><i class="fa-solid fa-check text-gold"></i> Ransomware Neutralization</span>
-                    <span class="stream-item"><i class="fa-solid fa-check text-gold"></i> Deep & Dark Web Surveillance</span>
-                    <span class="stream-item"><i class="fa-solid fa-check text-gold"></i> Financial Cyber Fraud Recovery</span>
-                    <span class="stream-item"><i class="fa-solid fa-check text-gold"></i> Mobile & Cloud Forensics</span>
-                    <span class="stream-item"><i class="fa-solid fa-check text-gold"></i> Nation-State Threat Tracking</span>
+                    <span class="stream-item"><i class="fa-solid fa-check text-gold"></i> Dark Web Surveillance</span>
+                    <span class="stream-item"><i class="fa-solid fa-check text-gold"></i> Financial Wire Recovery</span>
+                    <span class="stream-item"><i class="fa-solid fa-check text-gold"></i> Cloud & Memory Forensics</span>
+                    <span class="stream-item"><i class="fa-solid fa-check text-gold"></i> Sovereign Threat Tracking</span>
                 </div>
             </div>
         </div>
@@ -488,15 +510,15 @@
                     <div class="dash-main">
                         <div class="dash-stats-row">
                             <div class="mini-stat">
-                                <span class="lbl">NETWORK SENSORS</span>
+                                <span class="lbl">SENSORS</span>
                                 <span class="val text-gold" id="statSensors">4,892 ACTIVE</span>
                             </div>
                             <div class="mini-stat">
-                                <span class="lbl">ATTACKS MITIGATED</span>
+                                <span class="lbl">MITIGATED</span>
                                 <span class="val text-cyan" id="statAttacks">94,210 TODAY</span>
                             </div>
                             <div class="mini-stat">
-                                <span class="lbl">FORENSIC ARTIFACTS</span>
+                                <span class="lbl">FORENSICS</span>
                                 <span class="val text-green" id="statArtifacts">100% INTACT</span>
                             </div>
                         </div>
@@ -507,11 +529,11 @@
                                 <i class="fa-solid fa-satellite"></i> LIVE SURVEILLANCE INCIDENT STREAM
                             </div>
                             <div class="terminal-logs" id="terminalLogs">
-                                <div class="log-row info"><span class="ts">[18:40:02]</span> <span class="tag">[SURVEILLANCE]</span> Core integrity scanner synchronized with national cyber backbone.</div>
-                                <div class="log-row success"><span class="ts">[18:40:15]</span> <span class="tag">[DFIR]</span> Forensic disk image hash match verified (SHA-256): 9f8e...3c1a. Evidence logged.</div>
-                                <div class="log-row warn"><span class="ts">[18:40:33]</span> <span class="tag">[ANOMALY]</span> Unauthorized port scan intercepted on perimeter node #088. IP quarantined.</div>
-                                <div class="log-row info"><span class="ts">[18:40:48]</span> <span class="tag">[INTEL]</span> Threat actor dossier updated: APT-44 footprint mapped across dark forum repositories.</div>
-                                <div class="log-row success"><span class="ts">[18:41:00]</span> <span class="tag">[MONITOR]</span> All 12 critical communication gateways operating within nominal parameters.</div>
+                                <div class="log-row info"><span class="ts">[18:40:02]</span> <span class="tag">[SURVEILLANCE]</span> Core integrity scanner synchronized with national backbone.</div>
+                                <div class="log-row success"><span class="ts">[18:40:15]</span> <span class="tag">[DFIR]</span> Forensic disk image hash match verified (SHA-256): 9f8e...3c1a.</div>
+                                <div class="log-row warn"><span class="ts">[18:40:33]</span> <span class="tag">[ANOMALY]</span> Unauthorized port scan intercepted on perimeter node #088.</div>
+                                <div class="log-row info"><span class="ts">[18:40:48]</span> <span class="tag">[INTEL]</span> Threat actor dossier updated: APT-44 footprint mapped.</div>
+                                <div class="log-row success"><span class="ts">[18:41:00]</span> <span class="tag">[MONITOR]</span> All 12 critical communication gateways nominal.</div>
                             </div>
                         </div>
                     </div>
@@ -600,7 +622,7 @@
                 </div>
                 <h2 class="section-title">
                     Directorate of <br>
-                    <span class="gold-gradient-text">Administration</span>
+                    <span class="gold-gradient-text">Administration & Finance</span>
                 </h2>
                 <p class="section-desc">
                     Strategic leadership steering administrative compliance, financial governance, forensic integrity, and institutional coordination at Cyber Surveillance Intelligence.
@@ -632,7 +654,7 @@
 
                     <!-- Director Info & Scope -->
                     <div class="director-info-col">
-                        <div class="director-badge-tag">EXECUTIVE & CONTROL</div>
+                        <div class="director-badge-tag">EXECUTIVE COMMAND & CONTROL</div>
                         <h3 class="director-name">Md. Abu Jakariya</h3>
                         <h4 class="director-title">Director (Admin & Finance)</h4>
                         <div class="director-org">Cyber Surveillance Intelligence (CSI)</div>
@@ -664,11 +686,11 @@
                         <!-- Direct Contact Actions -->
                         <div class="director-contact-strip">
                             <div class="director-contact-item">
-                                <span class="d-label"><i class="fa-solid fa-envelope"></i> DIRECT EMAIL:</span>
+                                <span class="d-label"><i class="fa-solid fa-envelope"></i> EMAIL:</span>
                                 <a href="#" class="d-val text-cyan gmail-action-link" data-subject="Official Inquiry for Director Md. Abu Jakariya (Admin & Finance)">director_adfi_csi@secretary.net</a>
                             </div>
                             <div class="director-contact-item">
-                                <span class="d-label"><i class="fa-solid fa-phone"></i> DIRECT LINE:</span>
+                                <span class="d-label"><i class="fa-solid fa-phone"></i> DIRECT:</span>
                                 <a href="tel:+8801773729997" class="d-val text-gold">+880 1773-729997</a>
                             </div>
                             <div class="director-contact-item">
@@ -749,17 +771,23 @@
                         <div class="info-item">
                             <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
                             <div>
-                                <span class="label">Location</span>
+                                <span class="label">Headquarters / Location</span>
                                 <span class="val">Dhanmondi, Dhaka, Bangladesh</span>
                             </div>
                         </div>
 
-                      
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fa-solid fa-user-tie"></i></div>
+                            <div>
+                                <span class="label">Executive Administration</span>
+                                <span class="val">Md. Abu Jakariya (Director, Admin & Finance)</span>
+                            </div>
+                        </div>
 
                         <div class="info-item">
                             <div class="info-icon"><i class="fa-solid fa-phone-volume"></i></div>
                             <div>
-                                <span class="label">Official Phone</span>
+                                <span class="label">Official Phone / Hotline</span>
                                 <a href="tel:+8801773729997" class="val text-gold link-hover">+880 1773-729997</a>
                             </div>
                         </div>
@@ -800,18 +828,18 @@
                     <form id="contactForm" class="contact-form">
                         <div class="form-row">
                             <div class="form-group">
-                                <label for="fullName">Enter Your Full Name *</label>
-                                <input type="text" id="fullName" class="form-control" placeholder="e.g. Joynob Khan" required>
+                                <label for="fullName">Full Name / Official Alias *</label>
+                                <input type="text" id="fullName" class="form-control" placeholder="e.g. Commander Rafiqul Islam" required>
                             </div>
                             <div class="form-group">
-                                <label for="emailAddr">Your Email *</label>
-                                <input type="email" id="emailAddr" class="form-control" placeholder="example@email.com" required>
+                                <label for="emailAddr">Your Official / Contact Email *</label>
+                                <input type="email" id="emailAddr" class="form-control" placeholder="secure.agent@domain.com" required>
                             </div>
                         </div>
 
                         <div class="form-row">
                             <div class="form-group">
-                                <label for="orgName">Organization / Company *</label>
+                                <label for="orgName">Organization / Agency</label>
                                 <input type="text" id="orgName" class="form-control" placeholder="Enterprise or Agency Name">
                             </div>
                             <div class="form-group">
@@ -853,12 +881,12 @@
 
                         <div class="form-group checkbox-group">
                             <input type="checkbox" id="ndaCheck" required checked>
-                            <label for="ndaCheck">I require a Mutual Non-Disclosure Agreement (M-NDA) for all information dispatched to <strong>Email</strong>.</label>
+                            <label for="ndaCheck">I require a Mutual Non-Disclosure Agreement (M-NDA) for all information dispatched to <strong>director_adfi_csi@secretary.net</strong>.</label>
                         </div>
 
                         <button type="submit" class="btn btn-gold w-100" id="submitFormBtn">
                             <i class="fa-solid fa-envelope-circle-check"></i>
-                            <span>Send Email</span>
+                            <span>Send Email Directly to director_adfi_csi@secretary.net</span>
                         </button>
 
                         <div class="form-status" id="formStatusMsg"></div>
