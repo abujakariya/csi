@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Surveillance Intelligence</title>
+    <meta name="description" content="Cyber Surveillance Intelligence - Premier Cyber Crime Investigation, 24/7 Threat Monitoring, Digital Forensics, and Threat Analysis.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Rajdhani:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Threat Alert Ticker Bar -->
+    <div class="top-ticker-bar">
+        <div class="container ticker-container">
+            <div class="ticker-status">
+                <span class="live-pulse"></span>
+                <span class="status-tag">INTELLIGENCE GRID</span>
+                <span class="status-info">DEFCON LEVEL 1 — SURVEILLANCE ACTIVE</span>
+            </div>
+            <div class="ticker-metrics">
+                <span><i class="fa-solid fa-location-dot text-gold"></i> Dhanmondi, Dhaka, Bangladesh</span>
+                <span class="divider">|</span>
+                <a href="#" class="gmail-action-link" data-subject="Urgent Cyber Defense Inquiry" title="Click to send email via Gmail">
+                    <i class="fa-solid fa-envelope-shield text-cyan"></i> director_adfi_csi@secretary.net
+                </a>
+                <span class="divider">|</span>
+                <a href="tel:+8801773729997" class="hotline-tag"><i class="fa-solid fa-phone-volume"></i> Direct Line: <strong>+880 1773-729997</strong></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="site-header" id="navbar">
+        <div class="container nav-container">
+            <!-- Brand Logo with Crisp White Circular Badge -->
+            <a href="#hero" class="brand-logo">
+                <div class="logo-wrapper">
+                    <img src="assets/logo.png" alt="Cyber Surveillance Intelligence Emblem" class="emblem-img logo-round">
+                    <span class="emblem-glow"></span>
+                </div>
+                <div class="brand-text">
+                    <span class="brand-title">CYBER SURVEILLANCE</span>
+                    <span class="brand-subtitle">INTELLIGENCE AGENCY</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Menu (Tight, single line fit) -->
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="#hero" class="nav-item active">Home</a></li>
+                    <li><a href="#about" class="nav-item">About Us</a></li>
+                    <li><a href="#director" class="nav-item">Leadership</a></li>
+                    <li><a href="#services" class="nav-item">Services</a></li>
+                    <li><a href="#operations" class="nav-item">Forensic Lab</a></li>
+                    <li><a href="#intelligence" class="nav-item">Threat Intel</a></li>
+                    <li><a href="#contact" class="nav-item">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Header Action CTA -->
+            <div class="nav-actions">
+                <a href="https://www.facebook.com/cybersurveillanceintelligence" target="_blank" rel="noopener noreferrer" class="nav-fb-btn" aria-label="Official Facebook Page" title="Official Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <button class="btn btn-outline btn-compact" id="emergencyReportBtn">
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                    <span>Report Incident</span>
+                </button>
+                <a href="#contact" class="btn btn-gold btn-compact" id="navConsultBtn">
+                    <i class="fa-solid fa-shield-virus"></i>
+                    <span>Consultation</span>
+                </a>
+                <!-- Mobile Hamburger Toggle -->
+                <button class="mobile-toggle" id="menuToggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div class="mobile-drawer" id="mobileDrawer">
+            <ul class="mobile-nav-links">
+                <li><a href="#hero" class="mobile-link">Home</a></li>
+                <li><a href="#about" class="mobile-link">About Us</a></li>
+                <li><a href="#director" class="mobile-link">Directorate Leadership</a></li>
+                <li><a href="#services" class="mobile-link">Core Services</a></li>
+                <li><a href="#operations" class="mobile-link">Forensic Lab</a></li>
+                <li><a href="#intelligence" class="mobile-link">Threat Intel</a></li>
+                <li><a href="#contact" class="mobile-link">Contact</a></li>
+            </ul>
+            <div class="mobile-social-bar">
+                <a href="https://www.facebook.com/cybersurveillanceintelligence" target="_blank" rel="noopener noreferrer" class="btn btn-outline w-100 mb-2">
+                    <i class="fa-brands fa-facebook-f text-gold"></i> Official Facebook Page
+                </a>
+            </div>
+            <div class="mobile-actions">
+                <button class="btn btn-outline w-100 mb-2" id="mobileEmergencyBtn">
+                    <i class="fa-solid fa-triangle-exclamation"></i> Report Incident
+                </button>
+                <a href="#contact" class="btn btn-gold w-100" id="mobileConsultBtn">
+                    <i class="fa-solid fa-shield-virus"></i> Secure Consultation
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO BANNER SECTION (Under Nav with Animation) -->
+    <section class="hero-section" id="hero">
+        <!-- Interactive Cyber Background Canvas -->
+        <canvas id="cyberCanvas"></canvas>
+        <div class="hero-grid-overlay"></div>
+        <div class="hero-radial-glow"></div>
+
+        <div class="container hero-content">
+            <div class="hero-left">
+                <div class="hero-badge fade-in-up">
+                    <span class="badge-icon"><i class="fa-solid fa-fingerprint"></i></span>
+                    <span class="badge-text">HIGH-GRADE DIGITAL INVESTIGATION & SURVEILLANCE</span>
+                </div>
+
+                <h1 class="hero-title fade-in-up delay-1">
+                    Defending Cyberspace With <br>
+                    <span class="gold-gradient-text">Advanced Intelligence</span> & Precision.
+                </h1>
+
+                <div class="motto-box fade-in-up delay-2">
+                    <div class="motto-icon"><i class="fa-solid fa-compass"></i></div>
+                    <div class="motto-content">
+                        <span class="motto-label">OPERATIONAL MOTTO</span>
+                        <h2 class="motto-title">OBSERVE, PROTECT & STAY SECURE</h2>
+                    </div>
+                </div>
+
+                <p class="hero-desc fade-in-up delay-3">
+                    Cyber Surveillance Intelligence (CSI) delivers nation-grade cyber crime investigation, continuous 24/7 proactive monitoring, high-precision digital forensics, and predictive threat analytics based in Dhanmondi, Dhaka.
+                </p>
+
+                <div class="hero-cta-group fade-in-up delay-4">
+                    <a href="#services" class="btn btn-gold-large" id="heroExploreBtn">
+                        <i class="fa-solid fa-crosshairs"></i>
+                        <span>Explore Capabilities</span>
+                    </a>
+                    <a href="https://www.facebook.com/cybersurveillanceintelligence" target="_blank" rel="noopener noreferrer" class="btn btn-glass-large">
+                        <i class="fa-brands fa-facebook-f text-gold"></i>
+                        <span>Official Channel</span>
+                    </a>
+                </div>
+
+                <!-- Live Quick Stats -->
+                <div class="hero-stats-grid fade-in-up delay-5">
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="99.98">0%</div>
+                        <div class="stat-label">Threat Interception Rate</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="15000">0+</div>
+                        <div class="stat-label">Incidents Triaged</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="24">0/7</div>
+                        <div class="stat-label">Autonomous Surveillance</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="100">0%</div>
+                        <div class="stat-label">Court-Admissible Evidence</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Right: Interactive 3D Circular Emblem Showcase with Clean White Badge -->
+            <div class="hero-right fade-in-scale">
+                <div class="emblem-showcase-container">
+                    <!-- Rotating Surveillance Radar Rings -->
+                    <div class="radar-circle radar-outer"></div>
+                    <div class="radar-circle radar-mid"></div>
+                    <div class="radar-circle radar-inner"></div>
+                    <div class="radar-sweep"></div>
+
+                    <!-- Center Circular Shield Logo Card with White Round Disc -->
+                    <div class="emblem-card-3d circular-podium" id="emblemCard">
+                        <div class="card-glow-reflection"></div>
+                        <div class="hero-emblem-round-wrap">
+                            <img src="assets/logo.png" alt="Cyber Surveillance Intelligence Bangladesh Emblem" class="hero-emblem-img logo-round">
+                        </div>
+                        <div class="emblem-details">
+                            <span class="emblem-subtag"><i class="fa-solid fa-shield-halved"></i> VERIFIED DEFENSE COMMAND</span>
+                            <span class="emblem-jurisdiction">BANGLADESH CYBER DEFENSE INITIATIVE</span>
+                        </div>
+                    </div>
+
+                    <!-- Orbiting Cyber Nodes (Clickable shortcuts) -->
+                    <a href="#services" data-jump-service="threat-analysis" class="orbit-tag tag-top">
+                        <i class="fa-solid fa-magnifying-glass-chart"></i> Crime Analysis
+                    </a>
+                    <a href="#services" data-jump-service="forensics" class="orbit-tag tag-bottom-left">
+                        <i class="fa-solid fa-microscope"></i> Digital Forensics
+                    </a>
+                    <a href="#services" data-jump-service="monitoring" class="orbit-tag tag-bottom-right">
+                        <i class="fa-solid fa-eye"></i> 24/7 Monitoring
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Banner Bottom Stream Strip -->
+        <div class="hero-stream-strip">
+            <div class="container stream-container">
+                <span class="stream-label"><i class="fa-solid fa-circle-nodes"></i> ACTIVE INTEL FEEDS:</span>
+                <div class="stream-items">
+                    <span class="stream-item"><i class="fa-solid fa-check text-gold"></i> Ransomware Neutralization</span>
+                    <span class="stream-item"><i class="fa-solid fa-check text-gold"></i> Deep & Dark Web Surveillance</span>
+                    <span class="stream-item"><i class="fa-solid fa-check text-gold"></i> Financial Cyber Fraud Recovery</span>
+                    <span class="stream-item"><i class="fa-solid fa-check text-gold"></i> Mobile & Cloud Forensics</span>
+                    <span class="stream-item"><i class="fa-solid fa-check text-gold"></i> Nation-State Threat Tracking</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CORE SERVICES SECTION -->
+    <section class="services-section section-padding" id="services">
+        <div class="container">
+            <div class="section-header text-center">
+                <div class="section-badge">
+                    <i class="fa-solid fa-cubes-stacked"></i> SPECIALIZED SERVICE DOMAINS
+                </div>
+                <h2 class="section-title">
+                    Elite Cyber Security, Forensics & <br>
+                    <span class="gold-gradient-text">Surveillance Capabilities</span>
+                </h2>
+                <p class="section-desc">
+                    Engineered without compromise. We empower national agencies, financial institutes, and corporations with sovereign-grade defense, proactive surveillance, and exhaustive forensic investigations.
+                </p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Service 1: Cyber Crime Investigation -->
+                <div class="service-card" data-tilt>
+                    <div class="service-card-border"></div>
+                    <div class="service-icon-box">
+                        <i class="fa-solid fa-user-secret"></i>
+                    </div>
+                    <div class="service-tag">INVESTIGATIVE DIVISION</div>
+                    <h3 class="service-title">Cyber Crime Investigation</h3>
+                    <p class="service-text">
+                        Comprehensive investigation into corporate espionage, financial wire scams, identity hijacking, blackmail, extortion, and cyber warfare campaigns. We track threat actor footprints across international boundaries and encrypted channels.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fa-solid fa-arrow-right-long text-gold"></i> Dark Web & Telegram Actor Tracking</li>
+                        <li><i class="fa-solid fa-arrow-right-long text-gold"></i> Crypto Asset & Wire Fraud Tracing</li>
+                        <li><i class="fa-solid fa-arrow-right-long text-gold"></i> Social Engineering & Phishing Profiling</li>
+                    </ul>
+                    <a href="#contact" class="service-link service-select-btn" data-service-type="investigation">
+                        <span>Request Investigation</span>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                </div>
+
+                <!-- Service 2: 24/7 Surveillance & Monitoring -->
+                <div class="service-card featured-service" data-tilt>
+                    <div class="featured-badge">ALWAYS ON DUTY</div>
+                    <div class="service-card-border"></div>
+                    <div class="service-icon-box">
+                        <i class="fa-solid fa-eye"></i>
+                    </div>
+                    <div class="service-tag">SOC OPERATIONS</div>
+                    <h3 class="service-title">24/7 Surveillance & Monitoring</h3>
+                    <p class="service-text">
+                        Continuous telemetry surveillance guarding endpoints, servers, perimeter networks, and cloud instances. Our AI-driven behavioral models identify anomaly deviations and eliminate zero-day incursions within milliseconds.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fa-solid fa-arrow-right-long text-gold"></i> Real-Time SIEM/SOAR Telemetry</li>
+                        <li><i class="fa-solid fa-arrow-right-long text-gold"></i> Proactive Threat Hunting & Anomaly Alerting</li>
+                        <li><i class="fa-solid fa-arrow-right-long text-gold"></i> Sub-Second Threat Isolation Protocols</li>
+                    </ul>
+                    <a href="#contact" class="service-link service-select-btn" data-service-type="monitoring">
+                        <span>Activate Surveillance</span>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                </div>
+
+                <!-- Service 3: Digital Forensics & Incident Response -->
+                <div class="service-card" data-tilt>
+                    <div class="service-card-border"></div>
+                    <div class="service-icon-box">
+                        <i class="fa-solid fa-microchip"></i>
+                    </div>
+                    <div class="service-tag">FORENSIC SCIENCE LAB</div>
+                    <h3 class="service-title">Digital Forensics (DFIR)</h3>
+                    <p class="service-text">
+                        State-of-the-art forensic data extraction following chain-of-custody standards. From compromised hard drives to volatile RAM dumping and mobile device analysis, we recover deleted evidence admissible in court proceedings.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fa-solid fa-arrow-right-long text-gold"></i> Volatile Memory (RAM) & Disk Imaging</li>
+                        <li><i class="fa-solid fa-arrow-right-long text-gold"></i> Malware Reverse Engineering & Disassembly</li>
+                        <li><i class="fa-solid fa-arrow-right-long text-gold"></i> Chain-of-Custody Expert Witness Reports</li>
+                    </ul>
+                    <a href="#contact" class="service-link service-select-btn" data-service-type="forensics">
+                        <span>Initiate Forensic Audit</span>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                </div>
+
+                <!-- Service 4: Crime & Threat Intelligence Analysis -->
+                <div class="service-card" data-tilt>
+                    <div class="service-card-border"></div>
+                    <div class="service-icon-box">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+                    <div class="service-tag">INTELLIGENCE STRATEGY</div>
+                    <h3 class="service-title">Crime & Threat Analysis</h3>
+                    <p class="service-text">
+                        Transform raw cyber logs and OSINT signals into predictive, actionable intelligence. We map threat group TTPs (Tactics, Techniques, and Procedures) aligned to the MITRE ATT&CK framework to anticipate attacks before they strike.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fa-solid fa-arrow-right-long text-gold"></i> MITRE ATT&CK Threat Actor Mapping</li>
+                        <li><i class="fa-solid fa-arrow-right-long text-gold"></i> Geospatial & Sovereign Attack Vector Mapping</li>
+                        <li><i class="fa-solid fa-arrow-right-long text-gold"></i> Executive Threat Dossiers & Risk Briefings</li>
+                    </ul>
+                    <a href="#contact" class="service-link service-select-btn" data-service-type="threat-analysis">
+                        <span>Explore Threat Reports</span>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                </div>
+
+                <!-- Service 5: Vulnerability Assessment & Pen Testing -->
+                <div class="service-card" data-tilt>
+                    <div class="service-card-border"></div>
+                    <div class="service-icon-box">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <div class="service-tag">OFFENSIVE SECURITY</div>
+                    <h3 class="service-title">VAPT & Red Team Operations</h3>
+                    <p class="service-text">
+                        Authorized adversarial simulations to identify infrastructure loopholes before rogue syndicates exploit them. Rigorous black-box, grey-box, and white-box assessments across web, mobile, network, and SCADA architectures.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fa-solid fa-arrow-right-long text-gold"></i> Full-Spectrum Penetration Testing</li>
+                        <li><i class="fa-solid fa-arrow-right-long text-gold"></i> Cloud & API Hardening Analysis</li>
+                        <li><i class="fa-solid fa-arrow-right-long text-gold"></i> Zero-Day Exploit Surface Remediation</li>
+                    </ul>
+                    <a href="#contact" class="service-link service-select-btn" data-service-type="vapt">
+                        <span>Schedule Security Audit</span>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                </div>
+
+                <!-- Service 6: Data Leakage & Brand Protection -->
+                <div class="service-card" data-tilt>
+                    <div class="service-card-border"></div>
+                    <div class="service-icon-box">
+                        <i class="fa-solid fa-database"></i>
+                    </div>
+                    <div class="service-tag">DATA INTEGRITY</div>
+                    <h3 class="service-title">Data Leakage & Breach Defense</h3>
+                    <p class="service-text">
+                        Proactive surveillance of underground marketplaces, paste sites, and rogue repositories to pinpoint compromised credentials, internal IP leaks, and confidential customer databases before public disclosure.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fa-solid fa-arrow-right-long text-gold"></i> Continuous Dark Web Credential Scouring</li>
+                        <li><i class="fa-solid fa-arrow-right-long text-gold"></i> Brand Impersonation & Typosquat Takedown</li>
+                        <li><i class="fa-solid fa-arrow-right-long text-gold"></i> Executive Identity & VIP Shielding</li>
+                    </ul>
+                    <a href="#contact" class="service-link service-select-btn" data-service-type="breach">
+                        <span>Audit Data Exposure</span>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OPERATIONAL WORKFLOW SECTION -->
+    <section class="operations-section section-padding" id="operations">
+        <div class="container">
+            <div class="section-header text-center">
+                <div class="section-badge">
+                    <i class="fa-solid fa-network-wired"></i> THE CSI METHODOLOGY
+                </div>
+                <h2 class="section-title">
+                    Our 4-Phase Intelligence & <br>
+                    <span class="gold-gradient-text">Investigation Protocol</span>
+                </h2>
+                <p class="section-desc">
+                    Engineered to maintain strict legal integrity, rapid containment, and conclusive root-cause attribution.
+                </p>
+            </div>
+
+            <div class="workflow-grid">
+                <div class="workflow-step">
+                    <div class="step-num">01</div>
+                    <div class="step-icon"><i class="fa-solid fa-binoculars"></i></div>
+                    <h4 class="step-title">Observe & Detect</h4>
+                    <p class="step-desc">
+                        Continuous sensor telemetry across endpoints, network perimeters, and cyber traffic identifies early indicators of compromise (IoCs).
+                    </p>
+                    <div class="step-line"></div>
+                </div>
+
+                <div class="workflow-step">
+                    <div class="step-num">02</div>
+                    <div class="step-icon"><i class="fa-solid fa-shield-virus"></i></div>
+                    <h4 class="step-title">Triage & Contain</h4>
+                    <p class="step-desc">
+                        Immediate lockdown of affected infrastructure, micro-segmentation, and neutralization of active malicious payload executions.
+                    </p>
+                    <div class="step-line"></div>
+                </div>
+
+                <div class="workflow-step">
+                    <div class="step-num">03</div>
+                    <div class="step-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+                    <h4 class="step-title">Investigate & Forensics</h4>
+                    <p class="step-desc">
+                        Bit-stream bit-for-bit imaging, RAM reverse engineering, registry artifact extraction, and adversary attribution mapping.
+                    </p>
+                    <div class="step-line"></div>
+                </div>
+
+                <div class="workflow-step">
+                    <div class="step-num">04</div>
+                    <div class="step-icon"><i class="fa-solid fa-file-shield"></i></div>
+                    <h4 class="step-title">Protect & Hardening</h4>
+                    <p class="step-desc">
+                        Definitive legal documentation, forensic chain reports, post-incident remediation, and impenetrable defense recalibration.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERACTIVE THREAT MONITORING DASHBOARD PREVIEW -->
+    <section class="dashboard-section section-padding" id="intelligence">
+        <div class="container">
+            <div class="dashboard-wrapper">
+                <div class="dashboard-header-bar">
+                    <div class="dash-ctrls">
+                        <span class="ctrl-dot red"></span>
+                        <span class="ctrl-dot yellow"></span>
+                        <span class="ctrl-dot green"></span>
+                    </div>
+                    <div class="dash-title">
+                        <i class="fa-solid fa-terminal"></i> CSI SURVEILLANCE CONSOLE // LIVE TELEMETRY v4.8.2
+                    </div>
+                    <div class="dash-time" id="liveClock">2026-10-29 18:41:00 UTC+6</div>
+                </div>
+
+                <div class="dashboard-body">
+                    <div class="dash-sidebar">
+                        <div class="dash-profile">
+                            <div class="dash-mini-logo-wrap">
+                                <img src="assets/logo.png" alt="Logo" class="dash-mini-logo logo-round">
+                            </div>
+                            <div>
+                                <h5>CSI CYBER UNIT</h5>
+                                <span class="badge-online"><span class="dot-live"></span> OPERATIONAL</span>
+                            </div>
+                        </div>
+
+                        <ul class="dash-nav" id="dashNavTabs">
+                            <li class="active" data-tab="feed"><i class="fa-solid fa-chart-line"></i> Global Threat Feed</li>
+                            <li data-tab="zeroday"><i class="fa-solid fa-bug"></i> Zero-Day Tracker</li>
+                            <li data-tab="sandbox"><i class="fa-solid fa-magnifying-glass"></i> Forensics Sandbox</li>
+                            <li data-tab="vault"><i class="fa-solid fa-file-contract"></i> Evidence Vault</li>
+                        </ul>
+
+                        <div class="dash-defcon">
+                            <span class="defcon-title">DEFCON STATUS</span>
+                            <div class="defcon-bar">
+                                <div class="defcon-fill"></div>
+                            </div>
+                            <span class="defcon-val">LEVEL 1 — SECURE / ACTIVE WATCH</span>
+                        </div>
+                    </div>
+
+                    <div class="dash-main">
+                        <div class="dash-stats-row">
+                            <div class="mini-stat">
+                                <span class="lbl">NETWORK SENSORS</span>
+                                <span class="val text-gold" id="statSensors">4,892 ACTIVE</span>
+                            </div>
+                            <div class="mini-stat">
+                                <span class="lbl">ATTACKS MITIGATED</span>
+                                <span class="val text-cyan" id="statAttacks">94,210 TODAY</span>
+                            </div>
+                            <div class="mini-stat">
+                                <span class="lbl">FORENSIC ARTIFACTS</span>
+                                <span class="val text-green" id="statArtifacts">100% INTACT</span>
+                            </div>
+                        </div>
+
+                        <!-- Simulated Live Terminal Stream -->
+                        <div class="terminal-feed">
+                            <div class="terminal-title">
+                                <i class="fa-solid fa-satellite"></i> LIVE SURVEILLANCE INCIDENT STREAM
+                            </div>
+                            <div class="terminal-logs" id="terminalLogs">
+                                <div class="log-row info"><span class="ts">[18:40:02]</span> <span class="tag">[SURVEILLANCE]</span> Core integrity scanner synchronized with national cyber backbone.</div>
+                                <div class="log-row success"><span class="ts">[18:40:15]</span> <span class="tag">[DFIR]</span> Forensic disk image hash match verified (SHA-256): 9f8e...3c1a. Evidence logged.</div>
+                                <div class="log-row warn"><span class="ts">[18:40:33]</span> <span class="tag">[ANOMALY]</span> Unauthorized port scan intercepted on perimeter node #088. IP quarantined.</div>
+                                <div class="log-row info"><span class="ts">[18:40:48]</span> <span class="tag">[INTEL]</span> Threat actor dossier updated: APT-44 footprint mapped across dark forum repositories.</div>
+                                <div class="log-row success"><span class="ts">[18:41:00]</span> <span class="tag">[MONITOR]</span> All 12 critical communication gateways operating within nominal parameters.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about-section section-padding" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-visual">
+                    <div class="about-image-card">
+                        <div class="about-emblem-wrap">
+                            <img src="assets/logo.png" alt="Cyber Surveillance Intelligence Emblem" class="about-emblem-large logo-round">
+                        </div>
+                        <div class="about-badge-floating">
+                            <div class="floating-icon"><i class="fa-solid fa-award"></i></div>
+                            <div>
+                                <strong>ISO 27001 & NIST Compliant</strong>
+                                <span>Certified Cyber Defense Standards</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-text">
+                    <div class="section-badge">
+                        <i class="fa-solid fa-building-shield"></i> ABOUT THE AGENCY
+                    </div>
+                    <h2 class="section-title">
+                        Sovereign Cyber Guardianship, <br>
+                        <span class="gold-gradient-text">Uncompromising Truth</span>
+                    </h2>
+                    <p class="about-p">
+                        <strong>Cyber Surveillance Intelligence (CSI)</strong> is a premier specialized cyber intelligence, surveillance, and forensic agency dedicated to preserving digital sovereignty, securing business resilience, and exposing sophisticated cyber crime.
+                    </p>
+                    <p class="about-p">
+                        Operating from Dhanmondi, Dhaka, our multidisciplinary team of seasoned forensic examiners, threat intelligence researchers, and ethical hackers defends public and private enterprise integrity under the motto: <em>Observe, Protect & Stay Secure</em>.
+                    </p>
+
+                    <div class="about-values">
+                        <div class="value-item">
+                            <i class="fa-solid fa-check-double text-gold"></i>
+                            <div>
+                                <h5>Non-Disclosure & Top Secret Clearance</h5>
+                                <p>Strict confidentiality guarantees for sensitive corporate and state operations.</p>
+                            </div>
+                        </div>
+                        <div class="value-item">
+                            <i class="fa-solid fa-scale-balanced text-gold"></i>
+                            <div>
+                                <h5>Legal Integrity & Chain of Custody</h5>
+                                <p>All digital evidence adheres stringently to court and statutory legal requirements.</p>
+                            </div>
+                        </div>
+                        <div class="value-item">
+                            <i class="fa-solid fa-bolt-lightning text-gold"></i>
+                            <div>
+                                <h5>Rapid 15-Minute Emergency Response</h5>
+                                <p>Standby containment squads mobilize immediately upon high-severity breach declaration.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-cta">
+                        <a href="#contact" class="btn btn-gold" id="partnerCsiBtn">
+                            <i class="fa-solid fa-handshake-angle"></i> Partner With CSI
+                        </a>
+                        <a href="https://www.facebook.com/cybersurveillanceintelligence" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                            <i class="fa-brands fa-facebook-f text-gold"></i> Connect on Facebook
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW SECTION: EXECUTIVE DIRECTORATE LEADERSHIP -->
+    <section class="director-section section-padding" id="director">
+        <div class="container">
+            <div class="section-header text-center">
+                <div class="section-badge">
+                    <i class="fa-solid fa-user-shield"></i> EXECUTIVE GOVERNANCE
+                </div>
+                <h2 class="section-title">
+                    Directorate of <br>
+                    <span class="gold-gradient-text">Administration</span>
+                </h2>
+                <p class="section-desc">
+                    Strategic leadership steering administrative compliance, financial governance, forensic integrity, and institutional coordination at Cyber Surveillance Intelligence.
+                </p>
+            </div>
+
+            <div class="director-showcase-card">
+                <div class="director-card-border-glow"></div>
+                <div class="director-grid">
+                    <!-- Director Avatar & Visual Profile -->
+                    <div class="director-profile-col">
+                        <div class="director-avatar-wrapper">
+                            <div class="director-avatar-ring"></div>
+                            <div class="director-avatar-box">
+                                <div class="director-silhouette">
+                                    <i class="fa-solid fa-user-tie"></i>
+                                </div>
+                                <div class="avatar-badge-seal">
+                                    <img src="assets/logo.png" alt="CSI Seal" class="director-seal-mini logo-round">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="director-security-status">
+                            <span class="status-indicator-dot"></span>
+                            <span>OFFICIALLY ACCREDITED DIRECTORATE</span>
+                        </div>
+                    </div>
+
+                    <!-- Director Info & Scope -->
+                    <div class="director-info-col">
+                        <div class="director-badge-tag">EXECUTIVE & CONTROL</div>
+                        <h3 class="director-name">Md. Abu Jakariya</h3>
+                        <h4 class="director-title">Director (Admin & Finance)</h4>
+                        <div class="director-org">Cyber Surveillance Intelligence (CSI)</div>
+
+                        <p class="director-quote">
+                            "In cyberspace defense, absolute technical excellence must be reinforced by uncompromising administrative discipline, fiscal integrity, and legal chain-of-custody protocols. Our mission ensures every investigation stands on unquestionable truth."
+                        </p>
+
+                        <!-- Key Portfolios -->
+                        <div class="director-portfolios">
+                            <div class="portfolio-item">
+                                <i class="fa-solid fa-shield-check text-gold"></i>
+                                <span>Institutional Governance & Operational Administration</span>
+                            </div>
+                            <div class="portfolio-item">
+                                <i class="fa-solid fa-file-invoice-dollar text-gold"></i>
+                                <span>Fiscal Stewardship & Security Resource Allocation</span>
+                            </div>
+                            <div class="portfolio-item">
+                                <i class="fa-solid fa-scale-balanced text-gold"></i>
+                                <span>Regulatory Oversight & Inter-Agency Coordination</span>
+                            </div>
+                            <div class="portfolio-item">
+                                <i class="fa-solid fa-lock text-gold"></i>
+                                <span>Executive Confidentiality & Whistleblower Protection</span>
+                            </div>
+                        </div>
+
+                        <!-- Direct Contact Actions -->
+                        <div class="director-contact-strip">
+                            <div class="director-contact-item">
+                                <span class="d-label"><i class="fa-solid fa-envelope"></i> DIRECT EMAIL:</span>
+                                <a href="#" class="d-val text-cyan gmail-action-link" data-subject="Official Inquiry for Director Md. Abu Jakariya (Admin & Finance)">director_adfi_csi@secretary.net</a>
+                            </div>
+                            <div class="director-contact-item">
+                                <span class="d-label"><i class="fa-solid fa-phone"></i> DIRECT LINE:</span>
+                                <a href="tel:+8801773729997" class="d-val text-gold">+880 1773-729997</a>
+                            </div>
+                            <div class="director-contact-item">
+                                <span class="d-label"><i class="fa-solid fa-location-dot"></i> OFFICE:</span>
+                                <span class="d-val">Dhanmondi, Dhaka, Bangladesh</span>
+                            </div>
+                        </div>
+
+                        <div class="director-actions">
+                            <button type="button" class="btn btn-gold gmail-direct-btn" data-subject="Official Inquiry for Director Md. Abu Jakariya (Admin & Finance)">
+                                <i class="fa-solid fa-paper-plane"></i> Contact via Gmail
+                            </button>
+                            <a href="tel:+8801773729997" class="btn btn-outline">
+                                <i class="fa-solid fa-phone-volume"></i> Direct Line
+                            </a>
+                            <a href="https://www.facebook.com/cybersurveillanceintelligence" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                                <i class="fa-brands fa-facebook-f text-gold"></i> Facebook Page
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EMERGENCY / INCIDENT REPORT CTA STRIP -->
+    <section class="incident-alert-banner">
+        <div class="container alert-banner-container">
+            <div class="alert-banner-left">
+                <div class="pulse-icon"><i class="fa-solid fa-shield-virus"></i></div>
+                <div>
+                    <h3>Under An Active Cyber Attack or Data Breach?</h3>
+                    <p>Do not restart or power down compromised devices. Contact our 24/7 Digital Forensic & Incident Containment Command immediately.</p>
+                </div>
+            </div>
+            <div class="alert-banner-right">
+                <a href="tel:+8801773729997" class="btn btn-alert">
+                    <i class="fa-solid fa-phone-volume"></i> Call Hotline: +880 1773-729997
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT & CONSULTATION SECTION -->
+    <section class="contact-section section-padding" id="contact">
+        <div class="container">
+            <div class="section-header text-center">
+                <div class="section-badge">
+                    <i class="fa-solid fa-lock"></i> ENCRYPTED COMMUNICATION
+                </div>
+                <h2 class="section-title">
+                    Initiate Secure <br>
+                    <span class="gold-gradient-text">Investigation or Consultation</span>
+                </h2>
+                <p class="section-desc">
+                    All correspondence is transmitted directly to <strong>director_adfi_csi@secretary.net</strong>. We protect whistleblowers, corporate clients, and institutional partners with strict discretion.
+                </p>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Contact Details Card -->
+                <div class="contact-info-card">
+                    <div class="info-header">
+                        <div class="info-logo-wrap">
+                            <img src="assets/logo.png" alt="CSI Logo" class="info-logo logo-round">
+                        </div>
+                        <div>
+                            <h4>Cyber Surveillance Intelligence</h4>
+                            <span>Command & Control Center</span>
+                        </div>
+                    </div>
+
+                    <p class="info-intro">
+                        Reach our dedicated executive and investigative team for confidential casework, digital forensic audits, and round-the-clock threat surveillance.
+                    </p>
+
+                    <div class="info-items">
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div>
+                                <span class="label">Location</span>
+                                <span class="val">Dhanmondi, Dhaka, Bangladesh</span>
+                            </div>
+                        </div>
+
+                      
+
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fa-solid fa-phone-volume"></i></div>
+                            <div>
+                                <span class="label">Official Phone</span>
+                                <a href="tel:+8801773729997" class="val text-gold link-hover">+880 1773-729997</a>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fa-solid fa-envelope-shield"></i></div>
+                            <div>
+                                <span class="label">Directorate Email</span>
+                                <a href="#" class="val text-cyan link-hover gmail-action-link" data-subject="CSI Case Consultation Request">director_adfi_csi@secretary.net</a>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fa-solid fa-key"></i></div>
+                            <div>
+                                <span class="label">PGP Fingerprint</span>
+                                <span class="val code-font">B8E2 409A 115C 7041 DEF3 9A88 012C</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links-secure">
+                        <span>OFFICIAL CHANNELS:</span>
+                        <a href="https://www.facebook.com/cybersurveillanceintelligence" target="_blank" rel="noopener noreferrer" aria-label="Official Facebook" class="social-btn fb-highlight" title="Facebook Page">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <button type="button" class="social-btn gmail-action-link" data-subject="Secure Communication Dispatch" title="Send Email via Gmail">
+                            <i class="fa-solid fa-envelope"></i>
+                        </button>
+                        <a href="tel:+8801773729997" aria-label="Phone" class="social-btn" title="Call Hotline">
+                            <i class="fa-solid fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Form (Directly opens pre-filled Gmail or sends via email) -->
+                <div class="contact-form-card">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fullName">Enter Your Full Name *</label>
+                                <input type="text" id="fullName" class="form-control" placeholder="e.g. Joynob Khan" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="emailAddr">Your Email *</label>
+                                <input type="email" id="emailAddr" class="form-control" placeholder="example@email.com" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="orgName">Organization / Company *</label>
+                                <input type="text" id="orgName" class="form-control" placeholder="Enterprise or Agency Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="serviceType">Service Category *</label>
+                                <select id="serviceType" class="form-control" required>
+                                    <option value="">Select Service Required</option>
+                                    <option value="investigation">Cyber Crime Investigation</option>
+                                    <option value="monitoring">24/7 Surveillance & SOC Monitoring</option>
+                                    <option value="forensics">Digital Forensics & Incident Response (DFIR)</option>
+                                    <option value="threat-analysis">Crime & Threat Intelligence Analysis</option>
+                                    <option value="vapt">VAPT & Penetration Testing</option>
+                                    <option value="breach">Active Breach Containment (Emergency)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="priorityLevel">Incident Priority / Classification</label>
+                            <div class="priority-selector">
+                                <label class="priority-opt">
+                                    <input type="radio" name="priority" value="Standard Inquiry" checked>
+                                    <span>Standard Inquiry</span>
+                                </label>
+                                <label class="priority-opt">
+                                    <input type="radio" name="priority" value="High Priority">
+                                    <span>High Priority</span>
+                                </label>
+                                <label class="priority-opt emergency">
+                                    <input type="radio" name="priority" value="Critical Emergency">
+                                    <span>Critical / Active Breach</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="messageBody">Case Overview / Scope of Investigation *</label>
+                            <textarea id="messageBody" rows="4" class="form-control" placeholder="Describe the threat vectors, suspicious anomalies, or investigation requirements..." required></textarea>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="ndaCheck" required checked>
+                            <label for="ndaCheck">I require a Mutual Non-Disclosure Agreement (M-NDA) for all information dispatched to <strong>Email</strong>.</label>
+                        </div>
+
+                        <button type="submit" class="btn btn-gold w-100" id="submitFormBtn">
+                            <i class="fa-solid fa-envelope-circle-check"></i>
+                            <span>Send Email</span>
+                        </button>
+
+                        <div class="form-status" id="formStatusMsg"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-top">
+                <div class="footer-col brand-col">
+                    <div class="footer-brand">
+                        <div class="footer-logo-wrap">
+                            <img src="assets/logo.png" alt="CSI Emblem" class="footer-logo logo-round">
+                        </div>
+                        <div>
+                            <h4>Cyber Surveillance Intelligence</h4>
+                            <p class="motto-footer">OBSERVE, PROTECT & STAY SECURE</p>
+                        </div>
+                    </div>
+                    <p class="footer-desc">
+                        Nation-grade cybersecurity intelligence, specialized digital forensics, and proactive real-time surveillance operations defending digital infrastructure and justice.
+                    </p>
+                    <div class="cert-tags">
+                        <span><i class="fa-solid fa-shield"></i> ISO 27001</span>
+                        <span><i class="fa-solid fa-certificate"></i> NIST 800-86</span>
+                        <span><i class="fa-solid fa-lock"></i> Tier-IV DFIR</span>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h5 class="footer-heading">Services</h5>
+                    <ul class="footer-links">
+                        <li><a href="#services" data-jump-service="investigation">Cyber Crime Investigation</a></li>
+                        <li><a href="#services" data-jump-service="monitoring">24/7 Surveillance Monitoring</a></li>
+                        <li><a href="#services" data-jump-service="forensics">Digital Forensics (DFIR)</a></li>
+                        <li><a href="#services" data-jump-service="threat-analysis">Crime & Threat Analysis</a></li>
+                        <li><a href="#services" data-jump-service="vapt">Vulnerability Assessment</a></li>
+                        <li><a href="#services" data-jump-service="breach">Dark Web Intel Surveillance</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h5 class="footer-heading">Administration</h5>
+                    <ul class="footer-links">
+                        <li><a href="#director">Md. Abu Jakariya (Director)</a></li>
+                        <li><a href="#director">Directorate of Admin & Finance</a></li>
+                        <li><a href="#about">Dhanmondi, Dhaka Center</a></li>
+                        <li><a href="#operations">Chain of Custody Standard</a></li>
+                        <li><a href="#intelligence">Live Telemetry Dashboard</a></li>
+                        <li><a href="https://www.facebook.com/cybersurveillanceintelligence" target="_blank" rel="noopener noreferrer">Official Facebook Page</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h5 class="footer-heading">Confidential Hotline</h5>
+                    <div class="emergency-contact-box">
+                        <span class="hotline-lbl">DIRECT CONTACT LINE:</span>
+                        <a href="tel:+8801773729997" class="hotline-phone">+880 1773-729997</a>
+                        <a href="#" class="hotline-email gmail-action-link" data-subject="Direct Hotline Communication">
+                            <i class="fa-solid fa-envelope"></i> director_adfi_csi@secretary.net
+                        </a>
+                        <p class="hotline-note">Dhanmondi, Dhaka, Bangladesh</p>
+                    </div>
+                    <div class="badge-status-box">
+                        <span class="live-dot-green"></span>
+                        <span>All Sentinel Monitoring Grids Fully Armed</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-copy">
+                    &copy; 2026 Cyber Surveillance Intelligence. All Rights Reserved.
+                </div>
+                <div class="footer-social-inline">
+                    <a href="https://www.facebook.com/cybersurveillanceintelligence" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-facebook-f text-gold"></i> facebook.com/cybersurveillanceintelligence
+                    </a>
+                </div>
+                <div class="footer-legal">
+                    <a href="#">Privacy Protocol</a>
+                    <span class="dot">•</span>
+                    <a href="#">Terms of Engagement</a>
+                    <span class="dot">•</span>
+                    <a href="#">Lawful Intercept Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- INCIDENT REPORT MODAL (Directly dispatches emergency email to director) -->
+    <div class="modal-backdrop" id="incidentModal">
+        <div class="modal-window">
+            <div class="modal-header">
+                <div class="modal-title-wrap">
+                    <span class="modal-badge"><i class="fa-solid fa-triangle-exclamation"></i> EMERGENCY DISPATCH</span>
+                    <h3>Cyber Incident Report Center</h3>
+                </div>
+                <button class="modal-close" id="closeModalBtn" aria-label="Close dialog">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p class="modal-instructions">
+                    Report an active cyber crime, unauthorized intrusion, extortion, or corporate ransomware attack. This emergency dispatch will immediately open and send to <strong>director_adfi_csi@secretary.net</strong>.
+                </p>
+                <form id="emergencyReportForm" class="emergency-form">
+                    <div class="form-group">
+                        <label for="incidentNatureSelect">Incident Nature *</label>
+                        <select id="incidentNatureSelect" class="form-control" required>
+                            <option value="">Select Incident Type</option>
+                            <option value="Ransomware / Encrypted Systems">Ransomware / Encrypted Systems</option>
+                            <option value="Network Intrusion / Unauthorized Access">Network Intrusion / Unauthorized Access</option>
+                            <option value="Financial Scam / Wire Theft / Crypto Drain">Financial Scam / Wire Theft / Crypto Drain</option>
+                            <option value="Cyber Harassment / Blackmail / Impersonation">Cyber Harassment / Blackmail / Impersonation</option>
+                            <option value="Classified Data Leakage">Classified Data Leakage</option>
+                        </select>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="incidentPhoneInput">Your Contact Phone / Signal Number *</label>
+                            <input type="tel" id="incidentPhoneInput" class="form-control" placeholder="+880 1..." required>
+                        </div>
+                        <div class="form-group">
+                            <label for="incidentEmailInput">Your Secure Email *</label>
+                            <input type="email" id="incidentEmailInput" class="form-control" placeholder="secure@email.com" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="incidentDescInput">Immediate Incident Summary *</label>
+                        <textarea id="incidentDescInput" class="form-control" rows="3" placeholder="Provide infected hostname, IP, ransom note name, or threat indicators..." required></textarea>
+                    </div>
+
+                    <div class="form-callout">
+                        <i class="fa-solid fa-lightbulb text-gold"></i>
+                        <span>DO NOT turn off your machine or run unverified cleaning scripts. Volatile RAM data contains crucial encryption keys.</span>
+                    </div>
+
+                    <button type="submit" class="btn btn-alert w-100" id="emergencySubmitBtn">
+                        <i class="fa-solid fa-bolt"></i> Send Emergency Incident Email
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to top button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Custom Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
